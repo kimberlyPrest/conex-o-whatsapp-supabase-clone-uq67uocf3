@@ -158,11 +158,10 @@ export default function Index() {
     <div className="space-y-6 sm:space-y-8 animate-fade-in max-w-xl mx-auto pt-4 sm:pt-8 px-2 sm:px-0">
       <div className="text-center space-y-2 sm:space-y-3">
         <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-foreground">
-          Conexão WhatsApp
+          Conecte com o WhatsApp
         </h1>
         <p className="text-sm sm:text-lg text-muted-foreground max-w-md mx-auto leading-relaxed">
-          Sincronize seu número para permitir que os agentes respondam
-          automaticamente.
+          Conecte com o WhatsApp e sincronize seus contatos.
         </p>
       </div>
 

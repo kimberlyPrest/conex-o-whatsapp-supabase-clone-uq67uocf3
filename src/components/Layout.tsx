@@ -48,7 +48,7 @@ export default function Layout() {
     { path: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
     { path: '/conversations', label: 'Conversas', icon: MessageSquareText },
     { path: '/crm', label: 'CRM Kanban', icon: LayoutGrid },
-    { path: '/', label: 'Conexão WhatsApp', icon: MessageCircle },
+    { path: '/', label: 'Conecte com o WhatsApp', icon: MessageCircle },
     { path: '/agents', label: 'Meus Agentes', icon: Bot },
     { path: '/ai-config', label: 'Chaves API', icon: Key },
   ]
