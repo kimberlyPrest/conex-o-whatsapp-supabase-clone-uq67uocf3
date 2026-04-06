@@ -1,74 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-  :root {
-    /* Warm Off-White Background */
-    --background: 40 20% 98%;
-    --foreground: 222 47% 11%;
+  :root,
+  .dark {
+    /* Design System Colors */
+    --background: 0 0% 4%; /* #0A0A0A */
+    --foreground: 0 0% 100%; /* #FFFFFF */
 
-    /* Pure White Cards */
-    --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
+    --card: 0 0% 8%; /* #141414 */
+    --card-foreground: 0 0% 100%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 100%;
 
-    /* Vibrant Purple/Blue Primary */
-    --primary: 250 84% 65%;
+    --primary: 25 100% 50%; /* #FF6B00 */
     --primary-foreground: 0 0% 100%;
 
-    /* Soft Lavender/Gray for Secondary */
-    --secondary: 260 50% 97%;
-    --secondary-foreground: 250 40% 40%;
+    --secondary: 0 0% 11%; /* #1C1C1C */
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 240 5% 96%;
-    --muted-foreground: 215 16% 47%;
+    --muted: 0 0% 11%;
+    --muted-foreground: 0 0% 53%; /* #888888 */
 
-    --accent: 84 81% 86%; /* Soft Lime */
-    --accent-foreground: 120 40% 20%;
+    --accent: 173 100% 39%; /* #00C9B1 */
+    --accent-foreground: 0 0% 4%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 100% 62%; /* #FF3B3B */
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 250 84% 65%;
+    --warning: 43 100% 50%; /* #FFB800 */
+    --warning-foreground: 0 0% 4%;
 
-    --radius: 1.5rem;
+    --success: 144 100% 39%; /* #00C851 */
+    --success-foreground: 0 0% 100%;
+
+    --border: 0 0% 16%; /* #2A2A2A */
+    --input: 0 0% 16%;
+    --ring: 25 100% 50%;
+
+    --radius: 8px;
   }
 
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-primary/30;
+  }
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 250 84% 65%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 250 84% 65%;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display tracking-tight;
   }
 }
 

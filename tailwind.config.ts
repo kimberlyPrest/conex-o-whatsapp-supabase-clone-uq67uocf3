@@ -27,8 +27,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Inter var', 'SF Pro Display', 'system-ui', 'sans-serif'],
-        display: ['SF Pro Display', 'Inter var', 'system-ui', 'sans-serif'],
+        sans: ['DM Sans', 'sans-serif'],
+        display: ['Syne', 'sans-serif'],
       },
       colors: {
         border: 'hsl(var(--border))',
@@ -39,6 +39,7 @@ export default {
         primary: {
           DEFAULT: 'hsl(var(--primary))',
           foreground: 'hsl(var(--primary-foreground))',
+          soft: '#FF6B0015',
         },
         secondary: {
           DEFAULT: 'hsl(var(--secondary))',
@@ -64,6 +65,14 @@ export default {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
         },
+        warning: {
+          DEFAULT: 'hsl(var(--warning))',
+          foreground: 'hsl(var(--warning-foreground))',
+        },
+        success: {
+          DEFAULT: 'hsl(var(--success))',
+          foreground: 'hsl(var(--success-foreground))',
+        },
         sidebar: {
           DEFAULT: 'hsl(var(--sidebar-background))',
           foreground: 'hsl(var(--sidebar-foreground))',
@@ -74,14 +83,6 @@ export default {
           border: 'hsl(var(--sidebar-border))',
           ring: 'hsl(var(--sidebar-ring))',
         },
-        /* Custom Theme Colors */
-        theme: {
-          lime: '#D9F99D',
-          lavender: '#E9D5FF',
-          beige: '#FDFBF7',
-          blue: '#3B82F6',
-          purple: '#8B5CF6',
-        },
         chart: {
           1: 'hsl(var(--chart-1))',
           2: 'hsl(var(--chart-2))',
@@ -91,23 +92,24 @@ export default {
         },
       },
       borderRadius: {
-        lg: 'var(--radius)',
-        md: 'calc(var(--radius) - 2px)',
-        sm: 'calc(var(--radius) - 4px)',
-        xl: '1rem',
-        '2xl': '1.5rem',
-        '3xl': '2rem',
-        '4xl': '2.5rem',
+        lg: '12px',
+        md: '8px',
+        sm: '6px',
+        xl: '16px',
+        '2xl': '24px',
+        '3xl': '32px',
+        '4xl': '40px',
       },
       transitionProperty: {
         width: 'width',
         height: 'height',
       },
       boxShadow: {
+        card: '0 0 0 1px #2A2A2A',
         subtle:
           '0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.02)',
         elevation: '0 10px 30px -5px rgba(0, 0, 0, 0.05)',
-        'soft-glow': '0 0 20px rgba(99, 102, 241, 0.15)',
+        'soft-glow': '0 0 20px #FF6B0015',
       },
       transitionTimingFunction: {
         apple: 'cubic-bezier(0.42, 0, 0.58, 1)',

@@ -1,15 +1,15 @@
 {
   "_versions": {
-    "connect-whatsapp": 21,
-    "whatsapp-status": 11,
-    "provider-save-key": 4,
-    "agents-create": 3,
-    "agents-set-active": 2,
-    "whatsapp-webhook": 24,
-    "agents-upsert": 4,
-    "process-knowledge-base": 9,
-    "send-whatsapp-message": 6,
-    "disconnect-whatsapp": 2,
-    "crm-automation": 18
+    "agents-create": 1,
+    "agents-set-active": 1,
+    "agents-upsert": 1,
+    "connect-whatsapp": 1,
+    "crm-automation": 1,
+    "disconnect-whatsapp": 1,
+    "process-knowledge-base": 1,
+    "provider-save-key": 1,
+    "send-whatsapp-message": 1,
+    "whatsapp-status": 1,
+    "whatsapp-webhook": 1
   }
 }
